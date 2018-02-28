@@ -1,0 +1,32 @@
+.card-panel, #cornerRound00, #cornerRound01, #cornerRound02 {
+    border-radius: 10px !important;
+    background-color: #fff;
+}
+
+h6 {
+    color: #545454 !important;
+	line-height: 1.15em;
+	font-size: 1.10em;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+p {
+    display: block;
+    color: #545454 !important;
+}
+
+.input-field.inline {
+    vertical-align: middle;
+    margin-left: 5px;
+	width: 100%;
+	display: block !important;
+}
+
+select {
+	font-size: 80% !important;
+	font-weight: 900 !important;
+}
+
+
+

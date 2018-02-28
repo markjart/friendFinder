@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Your survey should have 10 questions of your choosing. Each answer should be on a scale of 1 to 5 based on how much the user agrees or disagrees with a question. Once you've found the current user's most compatible friend, display the result as a modal pop-up.  The modal should display both the name and picture of the closest match.  -->
+	<head>
+	  <meta charset="UTF-8">
+			<!-- materialize -->
+			<!-- Compiled and minified CSS -->
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+			<!-- Google material icons -->
+			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Friend Finder - Questionnaire</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="card-panel deep-purple darken-2 col s12 m12 l12 center-align">
+				<h4 class="white-text"><strong>Questionnaire</strong></h4>
+				<div class="card-panel left-align white">
+					<h5><strong>About You</strong></h5>
+					<br>
+					<div class="input-field">
+						<input id="name" type="text" class="validate" required>
+						<label class="active" for="name">Name (required)</label>
+					</div><br>
+					<div class="input-field">
+						<input id="photo" type="text" class="validate" required>
+						<label class="active" for="name">Link to Photo Image (required)</label>	
+					</div>
+					<h6><strong>Question 1</strong></h6>
+					<p>I enjoy old school RPGs as well as video games, board games, and card games.</p>
+					<select data-placeholder="" class="browser-default" id="q1">
+						<option value="">Choose an option</option>
+						<option value="1">1 (Strongly Disagree)</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 (Strongly Agree)</option>
+					</select>
+					<h6><strong>Question 2</strong></h6>
+					<p>I sass that hoopy Ford Prefect. There's a frood who really knows where his towel is.</p>
+					<select data-placeholder="" class="browser-default" id="q2">
+						<option value="">Choose an option</option>
+						<option value="1">1 (Strongly Disagree)</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 (Strongly Agree)</option>
+					</select>
+					<h6><strong>Question 3</strong></h6>
+					<p>I am an endocrinologist and psychic to the stars.</p>
+					<select data-placeholder="" class="browser-default" id="q3">
+						<option value="">Choose an option</option>
+						<option value="1">1 (Strongly Disagree)</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 (Strongly Agree)</option>
+					</select>
+					<h6><strong>Question 4</strong></h6>
+					<p>Science rocks. Entropy rules. Our Ends will be Glorious.</p>
+					<select data-placeholder="" class="browser-default" id="q4">
+						<option value="">Choose an option</option>
+						<option value="1">1 (Strongly Disagree)</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 (Strongly Agree)</option>
+					</select>
+					<h6><strong>Question 5</strong></h6>
+					<p>Winter!  Screw summer.</p>
+					<select data-placeholder="" class="browser-default" id="q5">
+						<option value="">Choose an option</option>
+						<option value="1">1 (Strongly Disagree)</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 (Strongly Agree)</option>
+					</select>
+					<h6><strong>Question 6</strong></h6>
+					<p>I spend all of my time amusing myself with wit, guile, and forgetfulness.</p>
+					<select data-placeholder="" class="browser-default" id="q6">
+						<option value="">Choose an Option</option>
+						<option value="1">1 (Strongly Disagree)</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 (Strongly Agree)</option>
+					</select>
+					<h6><strong>Question 7</strong></h6>
+					<p>Robby is the king of robots.</p>
+					<select data-placeholder="" class="browser-default" id="q7">
+						<option value="">Choose an option</option>
+						<option value="1">1 (Strongly Disagree)</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 (Strongly Agree)</option>
+					</select>
+					<h6><strong>Question 8</strong></h6>
+					<p>Star Trek.</p>
+					<select data-placeholder="" class="browser-default" id="q8">
+						<option value="">Choose an option</option>
+						<option value="1">1 (Strongly Disagree)</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 (Strongly Agree)</option>
+					</select>
+					<h6><strong>Question 9</strong></h6>
+					<p>Star Wars.</p>
+					<select data-placeholder="" class="browser-default" id="q9">
+						<option value="">Choose an option</option>
+						<option value="1">1 (Strongly Disagree)</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 (Strongly Agree)</option>
+					</select>
+					<h6><strong>Question 10</strong></h6>
+					<p>Why are sports?</p>
+					<select data-placeholder="" class="browser-default" id="q10">
+						<option value="">Choose an option</option>
+						<option value="1">1 (Strongly Disagree)</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 (Strongly Agree)</option>
+					</select>
+					<br>
+					<!-- Materialize Modal Submit Button -->
+					<button type ="submit" data-target="modal1" class="waves-effect waves-light btn modal-trigger deep-purple lighten-2" id="submitBtn">Submit</button>
+				</div>
+			</div>
+			<div class="col s4">
+				<p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/markjart/friendFinder" target="_blank">GitHub Repo</a> | <a href="/">Friend Finder Home</a></p>
+			</div>
+
+			<!-- Materialize Modal Structure -->
+			<div id="modal1" class="modal">
+
+				<div class="modal-content">
+					<div class="row">
+						<div class="col s7 m7 l7 left-align">
+							<h4>Meet Your New Pal</h4>
+							<h5 id="matchName"></h5>
+						</div>	
+						<div class="col s5 m5 l5 left-align">
+							<img id="matchPic" src="" alt="No Image" width = 200>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Done</a>
+				</div>
+		  </div>
+
+		</div>
+			<!-- jQuery -->
+			<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+			<!-- Compiled and minified JavaScript -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+	<!-- Grabs information and sends it to server -->
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#submitBtn").on("click", function() {
+					//form validation
+					var q1 = $("#q1").val().trim();
+					var q2 = $("#q2").val().trim();
+					var q3 = $("#q3").val().trim();
+					var q4 = $("#q4").val().trim();
+					var q5 = $("#q5").val().trim();
+					var q6 = $("#q6").val().trim();
+					var q7 = $("#q7").val().trim();
+					var q8 = $("#q8").val().trim();
+					var q9 = $("#q9").val().trim();
+					var q10 = $("#q10").val().trim();					
+					
+					if (
+						q1 === "" || q2 === "" || 
+						q3 === "" || q4 === "" || 
+						q5 === "" || q6 === "" || 
+						q7 === "" || q8 === "" || 
+						q9 === "" || q10 === "") {
+						alert("Please fill out ALL fields before submitting survey!");
+					}
+					else {
+						var newFriend = {
+								name: $("#name").val().trim(),
+								photo: $("#photo").val().trim(),
+								scores: [
+									$("#q1").val(),
+									$("#q2").val(),
+									$("#q3").val(),
+									$("#q4").val(),
+									$("#q5").val(),
+									$("#q6").val(),
+									$("#q7").val(),
+									$("#q8").val(),
+									$("#q9").val(),
+									$("#q10").val(),
+								]
+						};
+						//Grabs current URL of website
+						var currentURL = window.location.origin;
+						//AJAX posts the data to friends API.
+						$.post(currentURL + "/api/friends", newFriend, function(data) {
+							//Grab the result from the AJAX post so that the best match's name and photo are displayed.
+							$("#matchName").text(data.name);
+							$("#matchPic").attr("src", data.photo);
+						});
+						// Show the modal with the best match
+							$(".modal").modal();
+						//clear form after submission
+						$("#name").val("");
+						$("#photo").val("");
+						$("#q1").val("");
+						$("#q2").val("");
+						$("#q3").val("");
+						$("#q4").val("");
+						$("#q5").val("");
+						$("#q6").val("");
+						$("#q7").val("");
+						$("#q8").val("");
+						$("#q9").val("");
+						$("#q10").val("");
+					}	
+				});
+			});
+		</script>
+	</body>
+
+</html>
