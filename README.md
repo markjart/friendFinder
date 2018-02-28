@@ -15,8 +15,9 @@
 
 - Clone this repository.
 - In Gitbash, run `npm install` to install the npm packages listed above.
-- Then run `node server`.
+- Then run `node server` or `nodemon server` if using nodemon package.
      - The console should display: `App listening on PORT: 3000`
 - Open your browser and in the address bar, enter `http://localhost:3000/`
-     - The `home.html` page will load with a couple of links and a button to answer a questionairre.
-     - Follow the links, answewr the questionairre, and find yourself a new friend.
+     - The `home.html` page will load with a couple of links and a button to answer a questionnaire.
+     - Follow the links, answer the questionnaire, and **find yourself a new friend**.
+
